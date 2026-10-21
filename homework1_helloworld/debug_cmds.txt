@@ -1,0 +1,10 @@
+e 076b:0 48 65 6c 6c 6f 24
+e 076a:0 b8 6b 07 8e d8 ba 02 00 b4 09 cd 21 b8 00 4c cd 21
+r ds
+076b
+r cs
+076a
+r ip
+0
+g
+q
