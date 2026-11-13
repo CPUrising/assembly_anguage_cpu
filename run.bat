@@ -8,7 +8,7 @@ echo ============================================
 echo.
 
 if "%1"=="" (
-    set /p HW=Enter homework number 1-5, Enter to exit: 
+    set /p HW=Enter homework number 1-6, Enter to exit: 
 ) else (
     set HW=%1
 )
