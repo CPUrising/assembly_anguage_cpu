@@ -8,7 +8,7 @@ echo ============================================
 echo.
 
 if "%1"=="" (
-    set /p HW=Enter homework number 1-6, Enter to exit: 
+    set /p HW=Enter homework number 1-7, Enter to exit: 
 ) else (
     set HW=%1
 )
@@ -21,7 +21,7 @@ if "%HW%"=="1" (
     set DIR=homework%HW%
 )
 
-set FULL=D:\documents\assembly_anguage_cpu\%DIR%
+set FULL=D:\assembly_anguage_cpu\%DIR%
 
 if not exist "%FULL%" (
     echo.
@@ -37,7 +37,7 @@ echo DOSBox will open and stop at C:\ prompt.
 echo You can type masm / link / run commands directly.
 echo.
 
-"C:\Users\Lenovo\Desktop\DOSBox-0.74\DOSBox.exe" -c "mount c %FULL%" -c "mount d D:\Masm50" -c "path d:\;d:\bin" -c "c:" -c "dir"
+"D:\program\DOSBox-0.74-3\DOSBox.exe" -c "mount c %FULL%" -c "mount d D:\Masm50" -c "path d:\;d:\bin" -c "c:" -c "dir"
 
 if errorlevel 1 (
     echo.
